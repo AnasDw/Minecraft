@@ -1,0 +1,22 @@
+.DirtGrass{
+    background-image: url("https://i.pinimg.com/originals/78/b9/69/78b9699d96f18b8da617acb368682515.png");
+}
+.DirtSnow{
+    background-image: url("https://lh3.googleusercontent.com/8asPXEMd1cHbmqRzR1v2jozPl8gX09Zz1uF00NhXJak-2OHoTxnwqx6QqFYZBUONqUF-baujwUfbwEXhh97ljAh0m_EEkum9fOU=s400");
+}
+.Dirt{
+    background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/29/Snowy_Grass_Block_%28side_texture%29_JE3_BE3.png/revision/latest?cb=20210327144849.png");
+}
+.Wood{
+    background-image: url("https://lh3.googleusercontent.com/ZgQ9JLIH8SvNS3MwyA09sLJxNxHpFBWm0RLSiAQusCWUDJhnTCM6Qctp-ONITpAyiUxshQzwq1fSB81Yg2OWJt8");
+}
+.DarkWood{
+    background-image: url("https://lh3.googleusercontent.com/YRCOLmy8O0iXBOUTJc-tdjQ9Roh5TsAsZCWz6F1_fat-8QG2pi-Y7jqdnzCI-TWDgzUHyr-x4pl6Ty87y8sr0g");
+}
+.Stone{
+    background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/dc/Stone_%28texture%29_JE5_BE3.png/revision/latest?cb=20201001141805");
+}
+.Sky{
+    background-color: rgb(135, 206, 235);
+}
+

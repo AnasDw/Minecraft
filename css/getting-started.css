@@ -1,0 +1,77 @@
+#Getting-Started{
+    display: none;
+}
+
+.display-block{
+    position: absolute;
+    margin: 180px;
+    overflow: hidden;
+}
+
+.Instructions{
+    opacity: 0.6;
+    width: 650px;
+    height:auto;
+    background-color: rgb(211, 211, 211);
+}
+.Instructions header img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    top: 5px;
+    right: 5px;
+}
+.Instructions ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.Instructions ul li{
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.Instructions img{
+    width: 110px;
+    height: 100px;
+}
+
+
+#Maps-menu{
+    display: none;
+}
+#Maps-menu .Instructions  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    height: 40px;
+}
+#Maps-menu .Instructions img{
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#Maps-menu .Instructions ul{
+    margin: 30px;
+}
+#Maps-menu footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#Maps-menu footer img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.chosen-map div{
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid rgb(183, 33, 33);
+}

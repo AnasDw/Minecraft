@@ -1,0 +1,56 @@
+#game-window{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#BarSide-Tools{
+    opacity: 1;
+    width: 250px;
+    height: fit-content;
+    margin-top: 60px;
+}
+#BarSide-Tools ul {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 23px;
+}
+#BarSide-Tools img{
+    border-radius: 12px;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#BarSide-Tools video {
+    cursor: pointer;
+    height: 120px;
+}
+
+#game{
+    overflow: hidden;
+    display: flex;
+    margin: 40px 31px;
+    width: 100%;
+    height: 62%;
+    
+}
+.map{
+    background-color: rgba(13, 150, 248, 0.799);
+    width: 100%;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: start;
+}
+
+.block{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 8vmin;
+    height: 8vmin;
+}
