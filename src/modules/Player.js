@@ -1,8 +1,8 @@
-import { SelectedItems } from "../main";
-
-class Player {
+export class Player {
     constructor(map){
-        this._ItemsList = MapList;
+        if(map === "JungleMap") this._ItemsList = JungleMapList;
+        else if(map === "DesertMap") this._ItemsList = DesertMapList;
+        else this._ItemsList = SnowMapList;
     }
     _getItemsList(){
         return this._ItemsList;
@@ -28,3 +28,5 @@ class Player {
 
     };
 };
+
+import {JungleMapList, SnowMapList, DesertMapList } from "../models/Constants.js";

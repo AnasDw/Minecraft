@@ -1,14 +1,11 @@
-const homePage = document.getElementById("home-land-video");
-const gameWindow = document.getElementById("game-window");
-const loadingScreen = document.getElementById("loading-screen");
-const music = document.getElementById("video-sound");
+export const homePage = document.getElementById("home-land-video");
+export const gameWindow = document.getElementById("game-window");
+export const loadingScreen = document.getElementById("loading-screen");
+export const music = document.getElementById("video-sound");
 
-app.use("/src/modules", express.static('/src/modules/Game.js'));
 
-import {Game} from "../src/modules/Game";
-
-// export let SelectedMap = "none";
-// export let SelectedItems;
+export let SelectedMap = "none";
+export let SelectedItems;
 
 let audio_played = false;
 
@@ -103,12 +100,13 @@ Maps.forEach(map => {
 
 Maps_Menu.querySelector("#Tnt").addEventListener("click", () => {
     if(SelectedMap !== "none"){
+        SelectedItems = `${SelectedMap}List`;
+        music.pause();
+
         Maps_Menu.style.display = "none";
         Menu.style.display = "flex";
         homePage.style.display = "none";
-        music.pause();
         loadingScreen.style.display = "flex";
-        SelectedItems = `${SelectedMap}List`;
         setTimeout(function(){
             loadingScreen.style.display = "none"
             gameWindow.style.display = "flex";
@@ -122,3 +120,7 @@ Maps_Menu.querySelector("#Tnt").addEventListener("click", () => {
 
 
 
+
+
+
+import { Game } from './modules/Game.js';

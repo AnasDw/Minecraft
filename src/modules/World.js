@@ -1,17 +1,18 @@
-const mapSize = 18;
-
 export class World{
-    constructor(map) { 
-        this._map = map;
+    constructor(map) {
+        if(map === "JungleMap") this._map = JungleMap;
+        else if(map === "DesertMap") this._map = DesertMap;
+        else this._map = SnowMap;
+
         this.generateWorld();
     };
 
     generateWorld() {
-        const world = document.getElementById("map");
+        const world = document.getElementById("game").querySelector(".map");
         this._map.forEach(row => {
             if (row.length === 1){
                 Array.from({ length: mapSize }).forEach((_, index) => {
-                world.appendChild(this.generateItem(row[0], index));
+                    world.appendChild(this.generateItem(row[0], index));
                 }); 
             }
             else{
@@ -47,5 +48,6 @@ export class World{
     generateSpecificTile(tile,tileIndex) { 
         document.getElementById(tileIndex).innerHTML = tile.innerHTML;
     };
-
 }
+
+import {JungleMap,DesertMap,SnowMap, mapSize } from "../models/Constants.js";
