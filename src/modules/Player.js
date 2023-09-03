@@ -4,8 +4,9 @@ export class Player {
         else if(map === "DesertMap") this._ItemsList = DesertMapList;
         else this._ItemsList = SnowMapList;
     }
-    _getItemsList(){
-        return this._ItemsList;
+    getItemsList(){
+        const items = this._ItemsList
+        return items;
     };
     _addItem(item){
         if(item in this._ItemsList){

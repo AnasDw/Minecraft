@@ -10,14 +10,19 @@ export class World{
     generateWorld() {
         const world = document.getElementById("game").querySelector(".map");
         this._map.forEach(row => {
-            if (row.length === 1){
+            if (row.length == 1){
                 Array.from({ length: mapSize }).forEach((_, index) => {
                     world.appendChild(this.generateItem(row[0], index));
                 }); 
             }
             else{
-                row.forEach(col,index => {
-                    world.appendChild(this.generateItem(col, index));
+                row.forEach((col, index) => {
+                    if(index === row.length - 1 && row.length < mapSize){
+                        Array.from({ length: (mapSize - index) }).forEach((_, index) => {
+                            world.appendChild(this.generateItem(col, index));
+                        }); 
+                    }else 
+                        world.appendChild(this.generateItem(col,0));
                 })
             }
         });  

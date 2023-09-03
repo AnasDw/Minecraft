@@ -2,12 +2,13 @@ export const homePage = document.getElementById("home-land-video");
 export const gameWindow = document.getElementById("game-window");
 export const loadingScreen = document.getElementById("loading-screen");
 export const music = document.getElementById("video-sound");
+export const InventoryBox = document.getElementsByClassName("InventoryBox");
 
 
 export let SelectedMap = "none";
 export let SelectedItems;
 
-let audio_played = false;
+let audio_played = true;
 
 
 
@@ -21,6 +22,7 @@ const videoPromise = new Promise((resolve, reject) => {
 
 videoPromise.then((sound) => {
     sound.volume = 1;
+    sound.play();
     setTimeout(() => {
         document.querySelector(".Menu").style.display = "flex";
     }, 3500);
@@ -39,7 +41,7 @@ document.querySelector("video").addEventListener("ended", () => {
 // ------------ Icons ------------
 // Initialize the music button.
 document.getElementById("icon").addEventListener("click", () => {
-    if (!audio_played) {
+    if (!audio_played) {    
         audio_played = true;
         music.play();
         music.muted = false;
@@ -112,13 +114,11 @@ Maps_Menu.querySelector("#Tnt").addEventListener("click", () => {
             gameWindow.style.display = "flex";
         }, 3000);
 
-        new Game(SelectedMap);
+        const StartGame = new Game(SelectedMap);
         console.log("game");
 
     }else alert("Please select a map");
 });
-
-
 
 
 

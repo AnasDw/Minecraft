@@ -1,22 +1,56 @@
 .DirtGrass{
     background-image: url("https://i.pinimg.com/originals/78/b9/69/78b9699d96f18b8da617acb368682515.png");
 }
-.DirtSnow{
-    background-image: url("https://lh3.googleusercontent.com/8asPXEMd1cHbmqRzR1v2jozPl8gX09Zz1uF00NhXJak-2OHoTxnwqx6QqFYZBUONqUF-baujwUfbwEXhh97ljAh0m_EEkum9fOU=s400");
-}
 .Dirt{
-    background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/29/Snowy_Grass_Block_%28side_texture%29_JE3_BE3.png/revision/latest?cb=20210327144849.png");
+    background-image: url("/assets/textures/Dirt.jpeg");
 }
-.Wood{
-    background-image: url("https://lh3.googleusercontent.com/ZgQ9JLIH8SvNS3MwyA09sLJxNxHpFBWm0RLSiAQusCWUDJhnTCM6Qctp-ONITpAyiUxshQzwq1fSB81Yg2OWJt8");
+.TreeLeaves{
+    background-image: url("/assets/textures/TreeLeaves.jpeg");
 }
-.DarkWood{
-    background-image: url("https://lh3.googleusercontent.com/YRCOLmy8O0iXBOUTJc-tdjQ9Roh5TsAsZCWz6F1_fat-8QG2pi-Y7jqdnzCI-TWDgzUHyr-x4pl6Ty87y8sr0g");
+.TreeWood{
+    background-image: url("/assets/textures/TreeWood.jpeg");
 }
 .Stone{
-    background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/dc/Stone_%28texture%29_JE5_BE3.png/revision/latest?cb=20201001141805");
+    background-image: url("/assets/textures/Stone.jpeg");
 }
 .Sky{
     background-color: rgb(135, 206, 235);
 }
+.Cloud{
+    background-color: white;
+}
+.Shield{
+    background-image: url("/assets/textures/shield.png");
+}
+.Blossom{
+    background-color: rgb(135, 206, 235);
+    background-image: url("/assets/textures/spore_blossom.png");
+}
+.Melon{
+    background-color: rgb(135, 206, 235);
+    background-image: url("/assets/textures/melon.png");
+}
+.Fence{
+    background-color: rgb(135, 206, 235);
+    background-image: url("/assets/textures/acacia_fence.png");
+}
+.Bloom{
+    
+    background-image: url("https://ik.imagekit.io/AnasDweik/Minecraft/f54cdq10i1wuyeglnqsxmfny5rpdcxzp.webp?updatedAt=1693736940484");
+}
+.Sand{
+    background-image: url(/assets/textures/Sand.png)
+}
+.Water{
+    background-image: url(/assets/textures/Water.png)
+}
 
+.Cow{
+    background-color: rgb(135, 206, 235);
+    background-image: url("https://ik.imagekit.io/AnasDweik/Minecraft/Wooly_Cow.webp?updatedAt=1693737226108");
+}
+.BrownCow{
+    background-color: rgb(135, 206, 235);
+
+    background-image: url("https://ik.imagekit.io/AnasDweik/Minecraft/unnamed.png?updatedAt=1693737225713");
+}

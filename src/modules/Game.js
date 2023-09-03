@@ -4,6 +4,7 @@ export class Game{
         this._Map = map;
         this._World = new World(this._Map);
         this._Player = new Player(this._Map);
+        this._UI = new UI(this._Player.getItemsList(), gameWindow);
 
         this._StartGame();
     };
@@ -19,8 +20,8 @@ export class Game{
 
             if ( element.target.id  === "reset") this._ResetGame();
             else if ( element.target.id  === "home") {
-                this._ResetGame();
                 SwitchScreenShow(homePage, loadingScreen);
+                this._ResetGame();
                 music.play();
             }
             /// ----------------------------------------------------------------
@@ -40,21 +41,28 @@ export class Game{
                 element.target.classList.add("ActiveTool");                
             }
             /// ----------------------------------------------------------------
+            if (element.target.id === "box"){
+                gameWindow.querySelector("#InventoryBox").classList.toggle("Active");
+            }   
         })
     };
+
     _UpdateWorld(){
         
     };
     _ResetGame(){
+        this._World = null;
+        this._Player = null;
+        
         this._World = new World(this._Map);
         this._Player = new Player(this._Map);
         SwitchScreenShow(gameWindow, loadingScreen)
     };
 }
 
-import { loadingScreen, gameWindow, homePage, music } from "../main.js"
+import { loadingScreen, gameWindow, homePage, music, InventoryBox } from "../main.js"
 import { World } from './World.js';
 import { Player } from "./Player.js";
 import { SwitchScreenShow } from "../models/Constants.js";
-
+import { UI } from "./UI.js";
 

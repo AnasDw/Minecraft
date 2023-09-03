@@ -1,0 +1,40 @@
+#BarSide-Tools{
+    opacity: 1;
+    width: 250px;
+    height: fit-content;
+    margin-top: 60px;
+}
+#BarSide-Tools ul {
+    overflow: hidden;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 23px;
+}
+#BarSide-Tools img{
+    border-radius: 12px;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#BarSide-Tools video {
+    cursor: pointer;
+    height: 120px;
+}
+
+#BarSide-Tools :hover{
+    transition: 0.44s;
+    transform: translateY(2px);
+}
+#BarSide-Tools .icon-hover-fill{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+}
+#BarSide-Tools .icon-hover-fill:hover{
+    background-color: white;
+}

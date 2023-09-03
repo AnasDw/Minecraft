@@ -6,32 +6,43 @@ export const SnowMap = [
     ["Sky"],
     ["Sky"],
     ["Sky"],
-    ["Dirt"],
-    ["Dirt"],
-    ["Dirt"],
-    ["Dirt"],
-    ["Dirt"],
-    ["Dirt"],
-    ["Dirt"],
+    ["DirtGrass"],
+    ["DirtGrass"],
+    ["DirtGrass"],
+    ["DirtGrass"],
+    ["DirtGrass"],
+    ["DirtGrass"],
+    ["DirtGrass"],
+    ["DirtGrass"],
+    ["DirtGrass"],
+    ["DirtGrass"],
+    ["DirtGrass"],
+    ["DirtGrass"]
 ];
-export const SnowMapList = {
-    A: 0,
-    b: 0,
-    c: 0,
-    d: 0,
-    e: 0,
-    f: 0,
-    g: 0,
-};
+export const SnowMapList = [
+    {Dirt: 0},
+    {DirtGrass: 2},
+    {TreeLeaves: 3},
+    {Sky: 0},
+    {Cloud: 0},
+    {Blossom: 1},
+    {Melon: 0},
+];
 
 
 export const JungleMap = [
     ["Sky"],
-    ["Sky"],
-    ["Sky"],
-    ["Sky"],
-    ["Sky"],
-    ["Sky"],
+    ["Sky", "Sky", "Sky", "Cloud", "Cloud", "Cloud", "Cloud", "Sky"],
+    ["Sky", "Sky", "Cloud", "Cloud", "Cloud", "Cloud", "Cloud", "Cloud", "Cloud" ,"Sky", "Sky", "Sky","Sky","Sky", "Sky","Sky", "Cloud"],
+    ["Sky", "Sky", "Sky", "Sky", "Cloud", "Cloud", "Cloud", "Cloud", "Sky", "Sky","Sky", "Sky","Sky", "Sky", "Cloud"],
+    ["Sky", "Sky", "Sky", "Sky", "Sky","Sky", "Sky", "Sky", "Sky" , "TreeLeaves", "TreeLeaves", "TreeLeaves", "Sky"],
+    ["TreeLeaves", "Sky", "Sky", "Sky", "Sky","Sky", "Sky", "Sky", "TreeLeaves" , "TreeLeaves", "TreeLeaves", "TreeLeaves", "TreeLeaves" , "Sky"],
+    ["TreeLeaves", "TreeLeaves", "Sky", "Sky", "Sky","Sky", "Sky", "Sky", "Sky" , "TreeLeaves", "TreeLeaves", "TreeLeaves" , "Sky"],
+    ["TreeLeaves", "TreeLeaves", "TreeLeaves", "Sky", "Sky","Sky", "Sky", "Sky", "Sky", "Sky", "TreeWood" , "Sky","Sky", "Sky", "Sky", "Sky", "Sky","Sky", "Sky" , "Stone", "Stone", "Stone", "Sky"],
+    ["TreeLeaves", "TreeWood", "Sky", "Sky", "Sky","Sky", "Sky", "Sky", "Sky", "Sky", "TreeWood" , "Sky","Sky", "Sky", "Sky", "Sky", "Sky","Sky", "Sky", "Stone", "Stone", "Stone", "Sky"],
+    ["Blossom", "TreeWood", "Blossom", "Sky", "Sky","Blossom", "Blossom", "Sky", "Sky", "Sky", "TreeWood" , "Sky", "Sky", "Fence", "Melon" , "Melon", "Fence", "Sky" , "Stone"],
+    ["DirtGrass"],
+    ["Dirt"],
     ["Dirt"],
     ["Dirt"],
     ["Dirt"],
@@ -40,43 +51,46 @@ export const JungleMap = [
     ["Dirt"],
     ["Dirt"],
 ];
-export const JungleMapList = {
-    A: 0,
-    b: 0,
-    c: 0,
-    d: 0,
-    e: 0,
-    f: 0,
-    g: 0,
-};
+export const JungleMapList = [
+    {Dirt: 0},
+    {DirtGrass: 2},
+    {TreeLeaves: 3},
+    {Sky: 0},
+    {Cloud: 0},
+    {Blossom: 1},
+    {Melon: 0},
+];
 
 
 export const DesertMap = [
     ["Sky"],
-    ["Sky"],
-    ["Sky"],
-    ["Sky"],
-    ["Sky"],
-    ["Sky"],
-    ["Dirt"],
-    ["Dirt"],
-    ["Dirt"],
-    ["Dirt"],
-    ["Dirt"],
-    ["Dirt"],
-    ["Dirt"],
+    ["Sky", "Sky", "Sky", "Cloud", "Cloud", "Cloud", "Cloud", "Sky"],
+    ["Sky", "Sky", "Cloud", "Cloud", "Cloud", "Cloud", "Cloud", "Cloud", "Cloud" ,"Sky", "Sky", "Sky","Sky","Sky", "Sky","Sky", "Cloud"],
+    ["Sky", "Sky", "Sky", "Sky", "Cloud", "Cloud", "Cloud", "Cloud", "Sky", "Sky","Sky", "Sky","Sky", "Sky", "Cloud"],
+    ["Sky", "Sky", "Sky", "Sky", "Sky","Sky", "Sky", "Sky", "Sky" , "TreeLeaves", "TreeLeaves", "TreeLeaves", "Sky"],
+    ["TreeLeaves", "Sky", "Sky", "Sky", "Sky","Sky", "Sky", "Sky", "TreeLeaves" , "TreeLeaves", "TreeLeaves", "TreeLeaves", "TreeLeaves" , "Sky"],
+    ["TreeLeaves", "TreeLeaves", "Sky", "Sky", "Sky","Sky", "Sky", "Sky", "Sky" , "TreeLeaves", "TreeLeaves", "TreeLeaves" , "Sky"],
+    ["TreeLeaves", "TreeLeaves", "TreeLeaves", "Sky", "Sky","Sky", "Sky", "Sky", "Sky", "Sky", "TreeWood" , "Sky","Sky", "Sky", "Sky", "Sky", "Sky","Sky", "Sky" , "Stone", "Stone", "Stone", "Sky"],
+    ["Sky", "TreeWood", "Sky", "Sky", "BrownCow","Cow", "Sky", "Sky", "Sky", "Sky", "TreeWood" , "Sky","Sky", "BrownCow","Cow" , "Sky", "Sky", "Sky", "Sky", "Stone", "Stone", "Stone", "Sky"],
+    ["Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Water"],
+    ["Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand" , "Water"],
+    ["Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Sand", "Sand" , "Water"],
+    ["Sand"],
+    ["Sand"],
+    ["Sand"],
+    ["Sand"],
 ];
-export const DesertMapList = {
-    A: 0,
-    b: 0,
-    c: 0,
-    d: 0,
-    e: 0,
-    f: 0,
-    g: 0,
-};
+export const DesertMapList = [
+    {Dirt: 0},
+    {DirtGrass: 2},
+    {TreeLeaves: 3},
+    {Sky: 0},
+    {Cloud: 0},
+    {Blossom: 1},
+    {Melon: 0},
+]
 
-export const mapSize = 18;
+export const mapSize = 24;
 
 export function SwitchScreenShow (returnScreen, exitsScreen){
     returnScreen.style.display = "none";
