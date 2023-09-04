@@ -9,27 +9,31 @@ export class Player {
         const items = this._ItemsList
         return items;
     };
-    _addItem(itemToAdd){
+    _getItemCounter(itemToReturn){
+        let value = null;
         this._ItemsList.forEach(item => {
-            if(Object.keys(item)[0] === itemToAdd){
-                Object.values(item)[0]++; 
-                return true; 
+            if(Object.keys(item)[0] === itemToReturn){
+                value = Object.values(item)[0];
             }
         });
-    };
-    _removeItem(item) {
+        return value;
+    }
+    _addItem(itemToAdd, valuesToAdd) {
         this._ItemsList.forEach((item, index) => {
-            if(Object.keys(item)[0] === itemToAdd){
-                Object.values(item)[0]--; 
-                return true; 
-            }
+          if (Object.keys(item)[0] === itemToAdd) {
+            const currentItem = this._ItemsList[index];
+            const currentCount = currentItem[itemToAdd];
+            currentItem[itemToAdd] = currentCount + valuesToAdd;
+          }
         });
-    };
+      }
+
     _selectTool(tool){
         if(tool === "axe") this._Tool = new Axe();
         else if(tool === "shovel") this._Tool = new Shovel();
         else if(tool === "Pickaxe") this._Tool = new Pickaxe();
         else if (tool === "Sword") this._Tool = new Sword();
+        else this._Tool = null;
     };
     _getTool(){
         return this._Tool;

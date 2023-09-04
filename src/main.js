@@ -2,7 +2,7 @@ export const homePage = document.getElementById("home-land-video");
 export const gameWindow = document.getElementById("game-window");
 export const loadingScreen = document.getElementById("loading-screen");
 export const music = document.getElementById("video-sound");
-export const InventoryBox = document.getElementsByClassName("InventoryBox");
+export const InventoryBox = document.getElementById("InventoryBox");
 
 
 export let SelectedMap = "none";

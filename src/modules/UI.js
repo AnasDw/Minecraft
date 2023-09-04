@@ -21,13 +21,13 @@ export class UI{
         });
     }
 
-    _IncreaseItemCount(itemClass){
+    _IncreaseItemCount(itemClass, valueToAdd){
         const itemList = document.querySelectorAll("#InventoryBox");
         itemList.forEach((inventoryBox) => {
             const matchingElements = inventoryBox.querySelectorAll(`.${itemClass}`);
             matchingElements.forEach((box) => {
                 box.querySelectorAll(".Item-counter").forEach((counter) => {
-                    counter.textContent = parseInt(counter.textContent) + 1;
+                    counter.textContent = parseInt(counter.textContent) + valueToAdd;
                 })
             });
         });
@@ -49,9 +49,4 @@ export class UI{
             }
     }
 
-    // DecreaseItemCount(item){
-    //     const item = this._gameWindow.querySelector("#InventoryBox").document.getElementById(item);
-    //     item.textContent -= 1;
-    // }
-    
 }

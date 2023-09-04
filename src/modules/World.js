@@ -4,6 +4,7 @@ export class World{
         else if(map === "DesertMap") this._map = DesertMap;
         else this._map = SnowMap;
 
+        this._Item = new Item(null);
         this._mapName = map;
         this.generateWorld();
     };
@@ -39,6 +40,10 @@ export class World{
         });  
     };
 
+    _getItem(){
+        return this._Item;
+    }
+    
     setMap(newMap){
         this._map = newMap;
         this.generateWorld();
@@ -53,7 +58,7 @@ export class World{
     }
 
     addTile(tile, tileIndex){
-        this.generateSpecificTile(tile, tileIndex);
+        this._generateSpecificTile(tile, tileIndex);
     };
 
     _removeTile(tileDiv){
@@ -72,3 +77,4 @@ export class World{
 }
 
 import {JungleMap,DesertMap,SnowMap, mapSize } from "../models/Constants.js";
+import { Item } from "./Item.js";
