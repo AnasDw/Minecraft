@@ -20,14 +20,38 @@ export class UI{
             this._gameWindow.querySelector("#InventoryBox").appendChild(container);
         });
     }
-    UpdateUI(){
-        
-    }
-    IncreaseItemCount(item){
 
+    _IncreaseItemCount(itemClass){
+        const itemList = document.querySelectorAll("#InventoryBox");
+        itemList.forEach((inventoryBox) => {
+            const matchingElements = inventoryBox.querySelectorAll(`.${itemClass}`);
+            matchingElements.forEach((box) => {
+                box.querySelectorAll(".Item-counter").forEach((counter) => {
+                    counter.textContent = parseInt(counter.textContent) + 1;
+                })
+            });
+        });
     }
-    DecreaseItemCount(item){
 
+    UpdateSelectedTool(BarSide, element, gameWindow) {
+        BarSide.querySelectorAll("img").forEach( element => {
+                element.classList.remove("ActiveTool");
+            });
+            /// ----------------------------------------------------------------
+            if (element.target.id === "Pickaxe" ||
+                    element.target.id === "shovel" || 
+                        element.target.id === "Sword" || 
+                            element.target.id === "axe"){
+                                element.target.classList.add("ActiveTool");                
+            }
+            if (element.target.id === "box"){
+                gameWindow.querySelector("#InventoryBox").classList.toggle("Active");
+            }
     }
+
+    // DecreaseItemCount(item){
+    //     const item = this._gameWindow.querySelector("#InventoryBox").document.getElementById(item);
+    //     item.textContent -= 1;
+    // }
     
 }

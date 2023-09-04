@@ -16,6 +16,13 @@
 .Sky{
     background-color: rgb(135, 206, 235);
 }
+.SnowSky{
+    background-color: rgb(55, 98, 115);
+}
+.FrozenZombie{
+    background-color: rgb(55, 98, 115);
+    background-image: url("/assets/textures/FrozenZombie.webp");
+}
 .Cloud{
     background-color: white;
 }
@@ -43,6 +50,31 @@
 }
 .Water{
     background-image: url(/assets/textures/Water.png)
+}
+.Carbon{
+    background-image: url(/assets/textures/Carbon.png)
+}
+.Gold{
+    background-image: url(/assets/textures/Gold.png)
+}
+.Diamond{
+    background-image: url(/assets/textures/Diamond.png)
+}
+.RedDiamond{
+    background-image: url(/assets/textures/RedDiamond.jpeg)
+}
+.Ore{
+    background-image: url(/assets/textures/Ore.jpeg)
+}
+.Snow{
+    background-image: url(/assets/textures/Snow2.png)
+}
+.BrownWood{
+    background-image: url(/assets/textures/BrownWood.jpeg)
+}
+.PinkLeaves{
+    background-color: rgb(253, 253, 253);
+    background-image: url(/assets/textures/PinkLeaves.png)
 }
 
 .Cow{

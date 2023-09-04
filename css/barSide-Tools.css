@@ -7,11 +7,9 @@
 #BarSide-Tools ul {
     overflow: hidden;
     display: flex;
-    margin-top: 30px;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    gap: 23px;
+    gap: 17px;
 }
 #BarSide-Tools img{
     border-radius: 12px;
