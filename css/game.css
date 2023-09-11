@@ -34,7 +34,8 @@
     border: 3px solid rgba(121, 181, 30, 0.757);
 }
 
-#InventoryBox{
+.InventoryBox{
+    display:none;
     position: absolute;
     opacity: 0.9;
     border-radius: 17px;
@@ -46,11 +47,11 @@
     width: 74vmin;
     bottom: 0rem;
 }
-#InventoryBox .block{
+.InventoryBox .block{
     cursor: pointer;
     border: 1px solid rgb(255, 255, 255);
 }
-#InventoryBox .block:hover{
+.InventoryBox .block:hover{
     border: 2px solid rgb(237, 2, 2);
 }
 .Active{

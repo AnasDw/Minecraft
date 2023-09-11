@@ -2,32 +2,23 @@ export const homePage = document.getElementById("home-land-video");
 export const gameWindow = document.getElementById("game-window");
 export const loadingScreen = document.getElementById("loading-screen");
 export const music = document.getElementById("video-sound");
-export const InventoryBox = document.getElementById("InventoryBox");
+export const InventoryBox = gameWindow.querySelector(".InventoryBox");
+const video = document.querySelector("video");
 
 
 export let SelectedMap = "none";
 export let SelectedItems;
 
-let audio_played = true;
+let audio_played = false;
 
+setTimeout(() => {
+    document.querySelector(".Menu").style.display = "flex";
+}, 3500);
 
-
-
-const videoPromise = new Promise((resolve, reject) => {
-    let video = document.querySelector("video");
-    video.addEventListener("play", () => {
-        resolve(document.getElementById("video-sound"));
-    });
+video.addEventListener("play", () => {
+    music.volume = 1;
+    music.play();       
 });
-
-videoPromise.then((sound) => {
-    sound.volume = 1;
-    sound.play();
-    setTimeout(() => {
-        document.querySelector(".Menu").style.display = "flex";
-    }, 3500);
-})
-.catch((error) => {console.error(error);});
 
 document.querySelector("video").addEventListener("ended", () => {
     const v = document.querySelector("video");
@@ -36,12 +27,10 @@ document.querySelector("video").addEventListener("ended", () => {
     v.play();
 });
 
-
-
 // ------------ Icons ------------
 // Initialize the music button.
 document.getElementById("icon").addEventListener("click", () => {
-    if (!audio_played) {    
+    if (!audio_played) {   
         audio_played = true;
         music.play();
         music.muted = false;
@@ -104,19 +93,11 @@ Maps_Menu.querySelector("#Tnt").addEventListener("click", () => {
     if(SelectedMap !== "none"){
         SelectedItems = `${SelectedMap}List`;
         music.pause();
-
         Maps_Menu.style.display = "none";
         Menu.style.display = "flex";
-        homePage.style.display = "none";
-        loadingScreen.style.display = "flex";
-        setTimeout(function(){
-            loadingScreen.style.display = "none"
-            gameWindow.style.display = "flex";
-        }, 3000);
-
-        const StartGame = new Game(SelectedMap);
-        console.log("game");
-
+        SwitchScreen(gameWindow,homePage,loadingScreen);
+        let StartGame = null;
+        StartGame = new Game(SelectedMap);
     }else alert("Please select a map");
 });
 
@@ -124,3 +105,4 @@ Maps_Menu.querySelector("#Tnt").addEventListener("click", () => {
 
 
 import { Game } from './modules/Game.js';
+import { SwitchScreen } from './models/Constants.js';

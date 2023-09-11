@@ -97,11 +97,14 @@ export const DesertMapList = [
 
 export const mapSize = 24;
 
-export function SwitchScreenShow (returnScreen, exitsScreen){
+
+export function SwitchScreen (returnScreen, exitsScreen, loadingScreen){
     returnScreen.style.display = "none";
-    exitsScreen.style.display = "flex";
+    exitsScreen.style.display = "none";
+    loadingScreen.style.display = "flex";
     setTimeout(function(){
-        exitsScreen.style.display = "none"
+        loadingScreen.style.display = "none"
         returnScreen.style.display = "flex";
     }, 3000);
 }
+

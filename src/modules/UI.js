@@ -17,12 +17,19 @@ export class UI{
             counter.classList.add("Flex-Centre");
             counter.textContent = Object.values(element);
             container.appendChild(counter);
-            this._gameWindow.querySelector("#InventoryBox").appendChild(container);
+            this._gameWindow.querySelector(".InventoryBox").appendChild(container);
         });
     }
 
+    _EndUI(){
+        this._ItemsList = null;
+        document.getElementById("game").querySelector(".InventoryBox").remove();
+        const Div = document.createElement("div");
+        Div.className = "InventoryBox";
+        document.getElementById("game").appendChild(Div);
+    };
     _IncreaseItemCount(itemClass, valueToAdd){
-        const itemList = document.querySelectorAll("#InventoryBox");
+        const itemList = document.querySelectorAll(".InventoryBox");
         itemList.forEach((inventoryBox) => {
             const matchingElements = inventoryBox.querySelectorAll(`.${itemClass}`);
             matchingElements.forEach((box) => {
@@ -45,7 +52,7 @@ export class UI{
                                 element.target.classList.add("ActiveTool");                
             }
             if (element.target.id === "box"){
-                gameWindow.querySelector("#InventoryBox").classList.toggle("Active");
+                document.getElementById("game").querySelector(".InventoryBox").classList.toggle("Active");
             }
     }
 

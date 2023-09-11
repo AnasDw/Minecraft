@@ -1,5 +1,5 @@
 export class World{
-    constructor(map) {
+    constructor(map) {        
         if(map === "JungleMap") this._map = JungleMap;
         else if(map === "DesertMap") this._map = DesertMap;
         else this._map = SnowMap;
@@ -32,14 +32,25 @@ export class World{
                             world.appendChild(this.generateItem(col, indexCounter));
                             indexCounter++;
                         }); 
-                    }else 
+                    }else{
                         world.appendChild(this.generateItem(col,indexCounter));
                         indexCounter++;
+                    } 
+                      
                 })
             }
         });  
     };
 
+    _deleteWorld(){
+        this._map = null;
+        this._Item._setProp(null);
+        const world = document.getElementById("game").querySelector(".map");
+        world.remove();
+        const Div = document.createElement("div");
+        Div.className = "map";
+        document.getElementById("game").appendChild(Div);
+    }
     _getItem(){
         return this._Item;
     }
