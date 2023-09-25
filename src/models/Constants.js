@@ -51,16 +51,18 @@ export const JungleMap = [
 
 ];
 export const JungleMapList = [
-    {Dirt: 4},
-    {DirtGrass: 2},
-    {TreeLeaves: 0},
-    {Gold: 0},
-    {Diamond: 0},
-    {Blossom: 1},
-    {Melon: 2},
-    {RedDiamond:0},
-    {Ori:0},
-    {Carbon:0}
+  { Dirt: 4 },
+  { DirtGrass: 2 },
+  { TreeLeaves: 0 },
+  { TreeWood: 0 },
+  { Gold: 0 },
+  { Diamond: 0 },
+  { Blossom: 1 },
+  { Melon: 2 },
+  { RedDiamond: 0 },
+  { Ori: 0 },
+  { Stone: 0 },
+  { Carbon: 0 },
 ];
 
 
@@ -83,17 +85,18 @@ export const DesertMap = [
     ["RedDiamond"],
 ];
 export const DesertMapList = [
-    {Sand: 4},
-    {TreeLeaves: 0},
-    {Gold: 0},
-    {Diamond: 0},
-    {Water: 1},
-    {Cow: 2},
-    {BrownCow: 2},
-    {RedDiamond:0},
-    {Ori:0},
-    {Carbon:0}
-]
+  { Sand: 4 },
+  { TreeLeaves: 0 },
+  { TreeWood: 0 },
+  { Gold: 0 },
+  { Diamond: 0 },
+  { Water: 1 },
+  { Cow: 2 },
+  { BrownCow: 2 },
+  { RedDiamond: 0 },
+  { Ori: 0 },
+  { Carbon: 0 },
+];
 
 export const mapSize = 24;
 
