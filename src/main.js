@@ -37,8 +37,7 @@ document.querySelector("video").addEventListener("ended", () => {
 // ------------ Icons ------------
 // Initialize the music button.
 document.getElementById("icon").addEventListener("click", () => {
-  console.log(audio_played);
-  if (audio_played) {
+  if (!audio_played) {
     audio_played = true;
     music.play();
     music.muted = false;
@@ -92,7 +91,6 @@ const Maps = Maps_Menu.querySelectorAll("ul li");
 // choosing a map ...
 Maps.forEach((map) => {
   map.addEventListener("click", (chosen_map) => {
-  
     Maps.forEach((item_Map) => {
       item_Map.classList.remove("chosen-map");
     });
