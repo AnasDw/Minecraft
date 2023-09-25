@@ -18,6 +18,9 @@ export class Game {
     /// ----------------------------------------------------------------
     const BarSide = document.getElementById("BarSide-Tools");
     BarSide.addEventListener("click", (element) => {
+      var audio = new Audio("../../assets/sounds/click.mov");
+      audio.play();
+
       if (element.target.id === "reset") this._ResetGame();
       else if (element.target.id === "home") {
         this._EndGame();
@@ -43,7 +46,6 @@ export class Game {
         temp = temp.filter((x) => x !== "block");
         if (this._Player._getTool() != null) {
           if (this._Player._getTool().CheckCollision(temp)) {
-            this._Player._getTool().makeSound();
             this._UpdateWorld(texture.target, temp[0], true, 1);
           } else {
             texture.target.style.border = "2px solid red";

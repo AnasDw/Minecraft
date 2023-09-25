@@ -12,7 +12,10 @@ export class Tool {
 }
 
 export class Axe extends Tool {
-  makeSound() {}
+  makeSound() {
+    var audio = new Audio("../../assets/sounds/Wood.mp3");
+    audio.play();
+  }
   makeCursor() {}
   CheckCollision(itemToCheck) {
     const CollisionList = [
@@ -24,12 +27,18 @@ export class Axe extends Tool {
       "BrownWood",
       "PinkLeaves",
     ];
-    if (CollisionList.includes(itemToCheck[0])) return true;
+    if (CollisionList.includes(itemToCheck[0])) {
+      this.makeSound();
+      return true;
+    }
     return false;
   }
 }
 export class Shovel extends Tool {
-  makeSound() {}
+  makeSound() {
+    var audio = new Audio("../../assets/sounds/Shovel.mp3");
+    audio.play();
+  }
   makeCursor() {}
   CheckCollision(itemToCheck) {
     const CollisionList = [
@@ -41,12 +50,19 @@ export class Shovel extends Tool {
       "Snow",
       "PinkLeaves",
     ];
-    if (CollisionList.includes(itemToCheck[0])) return true;
+    if (CollisionList.includes(itemToCheck[0])) {
+      this.makeSound();
+
+      return true;
+    }
     return false;
   }
 }
 export class Pickaxe extends Tool {
-  makeSound() {}
+  makeSound() {
+    var audio = new Audio("../../assets/sounds/PickAxe.mp3");
+    audio.play();
+  }
   makeCursor() {}
   CheckCollision(itemToCheck) {
     const CollisionList = [
@@ -58,16 +74,33 @@ export class Pickaxe extends Tool {
       "Ore",
       "PinkLeaves",
     ];
-    if (CollisionList.includes(itemToCheck[0])) return true;
+    if (CollisionList.includes(itemToCheck[0])) {
+      this.makeSound();
+
+      return true;
+    }
     return false;
   }
 }
 export class Sword extends Tool {
-  makeSound() {}
+  makeSound(name) {
+    var audio = new Audio();
+    if (name === "FrozenZombie") {
+      audio = new Audio(
+        "../../assets/sounds/Minecraft Zombie Groan - Sound Effect (HD).mp3"
+      );
+    } else {
+      audio = new Audio("../../assets/sounds/mow");
+    }
+    audio.play();
+  }
   makeCursor() {}
   CheckCollision(itemToCheck) {
     const CollisionList = ["FrozenZombie", "Cow", "BrownCow"];
-    if (CollisionList.includes(itemToCheck[0])) return true;
+    if (CollisionList.includes(itemToCheck[0])) {
+      this.makeSound(itemToCheck[0]);
+      return true;
+    }
     return false;
   }
 }

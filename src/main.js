@@ -5,6 +5,12 @@ export const music = document.getElementById("video-sound");
 export const InventoryBox = gameWindow.querySelector(".InventoryBox");
 const video = document.querySelector("video");
 
+homePage.querySelectorAll("li").forEach((l) => {
+  l.addEventListener("click", () => {
+    var audio = new Audio("../assets/sounds/click.mov");
+    audio.play();
+  });
+});
 export let SelectedMap = "none";
 export let SelectedItems;
 
@@ -85,6 +91,7 @@ const Maps = Maps_Menu.querySelectorAll("ul li");
 // choosing a map ...
 Maps.forEach((map) => {
   map.addEventListener("click", (chosen_map) => {
+  
     Maps.forEach((item_Map) => {
       item_Map.classList.remove("chosen-map");
     });
