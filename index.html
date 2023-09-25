@@ -1,139 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/home-page.css">
-    <link rel="stylesheet" href="./css/getting-started.css">
-    <link rel="stylesheet" href="/css/game.css">
-    <link rel="stylesheet" href="/css/loading-screen.css">
-    <link rel="stylesheet" href="/css/textures.css">
-    <link rel="icon" href="/assets//textures/zombie_head.png">
-    <link rel="stylesheet" href="/css/barSide-Tools.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/home-page.css" />
+    <link rel="stylesheet" href="./css/getting-started.css" />
+    <link rel="stylesheet" href="/css/game.css" />
+    <link rel="stylesheet" href="/css/loading-screen.css" />
+    <link rel="stylesheet" href="/css/textures.css" />
+    <link rel="icon" href="/assets//textures/zombie_head.png" />
+    <link rel="stylesheet" href="/css/barSide-Tools.css" />
     <title>Minecraft</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="window">
-        <div id="home-land-video">
-            <div class="Menu">
-                <img src="https://ik.imagekit.io/AnasDweik/Minecraft/minecraft-logo-current.png?updatedAt=1692903860320" alt="Minecraft-logo">
-                <ul>
-                    <li> Craft Your Adventure </li>
-                    <li> Getting Started </li>
-                </ul>
-            </div>
-
-            <video muted autoplay preload="none" poster="https://ik.imagekit.io/AnasDweik/Minecraft/pre-home-loading.png?updatedAt=1692904536750" loading="lazy">
-                <source src="https://ik.imagekit.io/AnasDweik/Minecraft/EditedMinecraft.mp4?updatedAt=1692901582213" type="video/mp4">
-            </video>
-            <audio id="video-sound" autoplay loop >
-                <source autoplay src="https://ik.imagekit.io/AnasDweik/Minecraft/Minecraft-main-sound.mp3?updatedAt=1692905038623" type="audio/mp3">
-            </audio>
-            <img src="https://ik.imagekit.io/AnasDweik/Minecraft/note.png?updatedAt=1693239198419" id="icon">
-
-            <div id="Maps-menu" class="display-block">
-                <div class="Instructions">
-                    <header>
-                        <div>Embark on your journey! The map awaits your selection</div>
-                    </header>
-                    <ul>
-                        <li key="JungleMap">
-                            <img src="https://ik.imagekit.io/AnasDweik/Minecraft/15028670_l.webp?updatedAt=1693246283488" alt="">
-                            <div><strong>Jungle Adventure:</strong> Explore the Lush Green Canopy</div>
-                        </li>
-                        <li key="DesertMap">
-                            <img src="https://ik.imagekit.io/AnasDweik/Minecraft/1528812461_sg-mexa-desert-map.jpg?updatedAt=1693246282360" alt="">
-                            <div><strong>Desert Expedition:</strong> Traverse the Arid Dunes</div>
-                        </li>
-                        <li key="SnowMap">
-                            <img src="https://ik.imagekit.io/AnasDweik/Minecraft/6792e-16075624285751-800.jpg.avif?updatedAt=1693246282917" alt="">
-                            <div><strong>Snowy Wonderland:</strong> Embark on a Frosty Quest</div>
-                        </li>
-                    </ul>
-                    <footer>
-                        <img src="https://ik.imagekit.io/AnasDweik/Minecraft/x-mark.png?updatedAt=1693243128892" id="close-Instructions">
-                        <img src="/assets/textures/Tnt.png" id="Tnt">
-                    </footer>
-                </div>
-    
-            </div>
-
-            <div id="Getting-Started" class="display-block">
-                <div class="Instructions">
-                    <header>
-                        <img src="https://ik.imagekit.io/AnasDweik/Minecraft/x-mark.png?updatedAt=1693243128892" id="close-Instructions">
-                    </header>
-                    <ul>
-                        <li>
-                            <img src="https://ik.imagekit.io/AnasDweik/Minecraft/Axe.png?updatedAt=1693242201304" alt="">
-                            <div>Chop down trees and gather resources with ease!</div>
-                        </li>
-                        <li>
-                            <img src="https://ik.imagekit.io/AnasDweik/Minecraft/shovel.png?updatedAt=1693242201334" alt="">
-                            <div>Mine, and shape the world beneath your feet!</div>
-                        </li>
-                        <li>
-                            <img src="https://ik.imagekit.io/AnasDweik/Minecraft/stoneCrusher.png?updatedAt=1693242201292" alt="">
-                            <div>Crush rocks and ores, unlocking valuable resources!</div>
-                        </li>
-                    </ul>
-                </div>
-    
-            </div> 
+      <div id="home-land-video">
+        <div class="Menu">
+          <img
+            src="https://ik.imagekit.io/AnasDweik/Minecraft/minecraft-logo-current.png?updatedAt=1692903860320"
+            alt="Minecraft-logo"
+          />
+          <ul>
+            <li>Craft Your Adventure</li>
+            <li>Getting Started</li>
+          </ul>
         </div>
 
-        <div id="game-window">
+        <video
+          muted
+          autoplay
+          preload="none"
+          poster="https://ik.imagekit.io/AnasDweik/Minecraft/pre-home-loading.png?updatedAt=1692904536750"
+          loading="lazy"
+        >
+          <source
+            src="https://ik.imagekit.io/AnasDweik/Minecraft/EditedMinecraft.mp4?updatedAt=1692901582213"
+            type="video/mp4"
+          />
+        </video>
+        <audio id="video-sound" autoplay loop>
+          <source
+            autoplay
+            src="https://ik.imagekit.io/AnasDweik/Minecraft/Minecraft-main-sound.mp3?updatedAt=1692905038623"
+            type="audio/mp3"
+          />
+        </audio>
+        <img
+          src="https://ik.imagekit.io/AnasDweik/Minecraft/note.png?updatedAt=1693239198419"
+          id="icon"
+        />
 
-            <div id="BarSide-Tools">
-                <div>
-                    <ul>
-                        <li>
-                            <img class="icon-hover-fill" id="home" src="/assets/textures/home.png" alt="">
-                            <img id="reset" class="icon-hover-fill" src="/assets/textures/reset.png" alt="replay"/>
-                        </li>
-                        <li>
-                            <img id="axe" src="https://ik.imagekit.io/AnasDweik/Minecraft/Axe.png?updatedAt=1693242201304" alt="">
-                        </li>
-                        <li>
-                            <img id="shovel" src="https://ik.imagekit.io/AnasDweik/Minecraft/shovel.png?updatedAt=1693242201334" alt="">
-                        </li>
-                        <li>
-                            <img id="Pickaxe" src="https://ik.imagekit.io/AnasDweik/Minecraft/stoneCrusher.png?updatedAt=1693242201292" alt="">
-                        </li>
-                        <li>
-                            <img id="Sword" src="/assets/textures/Sword.webp" alt="">
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <video id="box" preload="none" poster="/assets/textures/box-poster.png" src="/assets/textures/box.mov" loading="lazy" loop autoplay></video>
-                        </li>
-                    </ul>
+        <div id="Maps-menu" class="display-block">
+          <div class="Instructions">
+            <header>
+              <div>Embark on your journey! The map awaits your selection</div>
+            </header>
+            <ul>
+              <li id="JungleMap">
+                <img
+                  id="JungleMap"
+                  src="https://ik.imagekit.io/AnasDweik/Minecraft/15028670_l.webp?updatedAt=1693246283488"
+                  alt=""
+                />
+                <div id="JungleMap">
+                  <strong>Jungle Adventure:</strong> Explore the Lush Green
+                  Canopy
                 </div>
-            </div>
-
-            
-            <div id="game">
-                <div class="InventoryBox"></div>
-                <div class="map">
+              </li>
+              <li id="DesertMap">
+                <img
+                  id="DesertMap"
+                  src="https://ik.imagekit.io/AnasDweik/Minecraft/1528812461_sg-mexa-desert-map.jpg?updatedAt=1693246282360"
+                  alt=""
+                />
+                <div id="DesertMap">
+                  <strong>Desert Expedition:</strong> Traverse the Arid Dunes
                 </div>
-            </div>
-
+              </li>
+              <li id="SnowMap">
+                <img
+                  id="SnowMap"
+                  src="https://ik.imagekit.io/AnasDweik/Minecraft/6792e-16075624285751-800.jpg.avif?updatedAt=1693246282917"
+                  alt=""
+                />
+                <div id="SnowMap">
+                  <strong>Snowy Wonderland:</strong> Embark on a Frosty Quest
+                </div>
+              </li>
+            </ul>
+            <footer>
+              <img
+                src="https://ik.imagekit.io/AnasDweik/Minecraft/x-mark.png?updatedAt=1693243128892"
+                id="close-Instructions"
+              />
+              <img src="/assets/textures/Tnt.png" id="Tnt" />
+            </footer>
+          </div>
         </div>
 
-        <div id="loading-screen">
-            <div class="dis-flex">
-                <img src="/assets/textures/trapped_chest.png" alt="">
-                <p> LOADING...</p>
-            </div> 
+        <div id="Getting-Started" class="display-block">
+          <div class="Instructions">
+            <header>
+              <img
+                src="https://ik.imagekit.io/AnasDweik/Minecraft/x-mark.png?updatedAt=1693243128892"
+                id="close-Instructions"
+              />
+            </header>
+            <ul>
+              <li>
+                <img
+                  src="https://ik.imagekit.io/AnasDweik/Minecraft/Axe.png?updatedAt=1693242201304"
+                  alt=""
+                />
+                <div>Chop down trees and gather resources with ease!</div>
+              </li>
+              <li>
+                <img
+                  src="https://ik.imagekit.io/AnasDweik/Minecraft/shovel.png?updatedAt=1693242201334"
+                  alt=""
+                />
+                <div>Mine, and shape the world beneath your feet!</div>
+              </li>
+              <li>
+                <img
+                  src="https://ik.imagekit.io/AnasDweik/Minecraft/stoneCrusher.png?updatedAt=1693242201292"
+                  alt=""
+                />
+                <div>Crush rocks and ores, unlocking valuable resources!</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="game-window">
+        <div id="BarSide-Tools">
+          <div>
+            <ul>
+              <li>
+                <img
+                  class="icon-hover-fill"
+                  id="home"
+                  src="/assets/textures/home.png"
+                  alt=""
+                />
+                <img
+                  id="reset"
+                  class="icon-hover-fill"
+                  src="/assets/textures/reset.png"
+                  alt="replay"
+                />
+              </li>
+              <li>
+                <img
+                  id="axe"
+                  src="https://ik.imagekit.io/AnasDweik/Minecraft/Axe.png?updatedAt=1693242201304"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  id="shovel"
+                  src="https://ik.imagekit.io/AnasDweik/Minecraft/shovel.png?updatedAt=1693242201334"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  id="Pickaxe"
+                  src="https://ik.imagekit.io/AnasDweik/Minecraft/stoneCrusher.png?updatedAt=1693242201292"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img id="Sword" src="/assets/textures/Sword.webp" alt="" />
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <video
+                  id="box"
+                  preload="none"
+                  poster="/assets/textures/box-poster.png"
+                  src="/assets/textures/box.mov"
+                  loading="lazy"
+                  loop
+                  autoplay
+                ></video>
+              </li>
+            </ul>
+          </div>
         </div>
 
+        <div id="game">
+          <div class="InventoryBox"></div>
+          <div class="map"></div>
+        </div>
+      </div>
+
+      <div id="loading-screen">
+        <div class="dis-flex">
+          <img src="/assets/textures/trapped_chest.png" alt="" />
+          <p>LOADING...</p>
+        </div>
+      </div>
     </div>
 
     <script type="module" src="./src/main.js"></script>
-</body>
-
+  </body>
 </html>

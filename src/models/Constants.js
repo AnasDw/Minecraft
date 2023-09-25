@@ -26,7 +26,7 @@ export const SnowMapList = [
     {FrozenZombie: 0},
     {BrownWood: 0},
     {RedDiamond:0},
-    {Ori:0},
+    {Ore:0},
     {Carbon:0}
 ];
 
@@ -60,7 +60,7 @@ export const JungleMapList = [
   { Blossom: 1 },
   { Melon: 2 },
   { RedDiamond: 0 },
-  { Ori: 0 },
+  { Ore: 0 },
   { Stone: 0 },
   { Carbon: 0 },
 ];
@@ -94,7 +94,7 @@ export const DesertMapList = [
   { Cow: 2 },
   { BrownCow: 2 },
   { RedDiamond: 0 },
-  { Ori: 0 },
+  { Ore: 0 },
   { Carbon: 0 },
 ];
 
