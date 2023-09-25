@@ -90,7 +90,7 @@ export class Sword extends Tool {
         "../../assets/sounds/Minecraft Zombie Groan - Sound Effect (HD).mp3"
       );
     } else {
-      audio = new Audio("../../assets/sounds/mow");
+      audio = new Audio("../../assets/sounds/mow.mov");
     }
     audio.play();
   }

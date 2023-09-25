@@ -37,7 +37,8 @@ document.querySelector("video").addEventListener("ended", () => {
 // ------------ Icons ------------
 // Initialize the music button.
 document.getElementById("icon").addEventListener("click", () => {
-  if (!audio_played) {
+  console.log(audio_played);
+  if (audio_played) {
     audio_played = true;
     music.play();
     music.muted = false;
