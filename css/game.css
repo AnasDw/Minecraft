@@ -40,11 +40,9 @@
 @media (max-width: 1189px) {
   #game-window {
     /* display: none; */
-    flex-direction: column;
   }
   #BarSide-Tools ul {
-    display: none;
-    flex-direction: row;
+    display: flex;
   }
   .block {
     flex: content;

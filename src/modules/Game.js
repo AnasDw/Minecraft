@@ -93,12 +93,13 @@ export class Game {
     }, 3000);
   }
   _ResetGame() {
+    InventoryBox.classList.remove("Active");
     this._UI._EndUI();
     this._World._deleteWorld();
     this._World = null;
     this._Player = null;
-    this._InitializeGame(this._Map);
     SwitchScreen(gameWindow, gameWindow, loadingScreen);
+    this._InitializeGame(this._Map);
   }
   _UpdateWorld(texture, textureName, boolean, valueToAdd) {
     if (boolean == true) {

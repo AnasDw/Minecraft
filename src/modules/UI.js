@@ -25,7 +25,7 @@ export class UI {
     document.getElementById("game").querySelector(".InventoryBox").remove();
     const Div = document.createElement("div");
     Div.className = "InventoryBox";
-    document.getElementById("game").appendChild(Div);
+   console.log( document.getElementById("game").appendChild(Div))
   }
   _IncreaseItemCount(itemClass, valueToAdd) {
     const itemList = document.querySelectorAll(".InventoryBox");
