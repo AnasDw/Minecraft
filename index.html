@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/home-page.css" />
     <link rel="stylesheet" href="./css/getting-started.css" />
     <link rel="stylesheet" href="/css/game.css" />
+    <link rel="stylesheet" href="/css/inventoryBox.css" />
     <link rel="stylesheet" href="/css/loading-screen.css" />
     <link rel="stylesheet" href="/css/textures.css" />
     <link rel="icon" href="/assets//textures/zombie_head.png" />
@@ -17,30 +18,20 @@
 
   <body>
     <div id="window">
-      <div id="home-land-video">
-        <div class="Menu">
-          <img
-            src="https://ik.imagekit.io/AnasDweik/Minecraft/minecraft-logo-current.png?updatedAt=1692903860320"
-            alt="Minecraft-logo"
-          />
-          <ul>
-            <li>Craft Your Adventure</li>
-            <li>Getting Started</li>
-          </ul>
-        </div>
+      <video
+        muted
+        autoplay
+        preload="none"
+        poster="https://ik.imagekit.io/AnasDweik/Minecraft/pre-home-loading.png?updatedAt=1692904536750"
+        loading="lazy"
+      >
+        <source
+          src="https://ik.imagekit.io/AnasDweik/Minecraft/EditedMinecraft.mp4?updatedAt=1692901582213"
+          type="video/mp4"
+        />
+      </video>
 
-        <video
-          muted
-          autoplay
-          preload="none"
-          poster="https://ik.imagekit.io/AnasDweik/Minecraft/pre-home-loading.png?updatedAt=1692904536750"
-          loading="lazy"
-        >
-          <source
-            src="https://ik.imagekit.io/AnasDweik/Minecraft/EditedMinecraft.mp4?updatedAt=1692901582213"
-            type="video/mp4"
-          />
-        </video>
+      <div id="home-land-video" class="Flex-Centre">
         <audio id="video-sound" autoplay loop>
           <source
             autoplay
@@ -48,12 +39,24 @@
             type="audio/mp3"
           />
         </audio>
+
         <img
           src="https://ik.imagekit.io/AnasDweik/Minecraft/note.png?updatedAt=1693239198419"
           id="icon"
         />
 
-        <div id="Maps-menu" class="display-block">
+        <div class="Menu Flex-Col-Centre Flex-Centre">
+          <img
+            src="https://ik.imagekit.io/AnasDweik/Minecraft/minecraft-logo-current.png?updatedAt=1692903860320"
+            alt="Minecraft-logo"
+          />
+          <ul class="Flex-Col-Centre">
+            <li class="Flex-Centre">Craft Your Adventure</li>
+            <li class="Flex-Centre">Getting Started</li>
+          </ul>
+        </div>
+
+        <div id="Maps-menu" class="display-block Flex-Centre">
           <div class="Instructions">
             <header>
               <div>Embark on your journey! The map awaits your selection</div>
@@ -101,14 +104,8 @@
           </div>
         </div>
 
-        <div id="Getting-Started" class="display-block">
-          <div class="Instructions">
-            <header>
-              <img
-                src="https://ik.imagekit.io/AnasDweik/Minecraft/x-mark.png?updatedAt=1693243128892"
-                id="close-Instructions"
-              />
-            </header>
+        <div id="Getting-Started" class="display-block Flex-Centre">
+          <div class="Instructions Flex-Col-Centre">
             <ul>
               <li>
                 <img
@@ -132,6 +129,12 @@
                 <div>Crush rocks and ores, unlocking valuable resources!</div>
               </li>
             </ul>
+            <footer>
+              <img
+                src="https://ik.imagekit.io/AnasDweik/Minecraft/x-mark.png?updatedAt=1693243128892"
+                id="close-Instructions"
+              />
+            </footer>
           </div>
         </div>
       </div>
@@ -139,7 +142,7 @@
       <div id="game-window">
         <div id="BarSide-Tools">
           <div>
-            <ul>
+            <ul class="Flex-Col-Centre">
               <li>
                 <img
                   class="icon-hover-fill"
@@ -178,31 +181,22 @@
               <li>
                 <img id="Sword" src="/assets/textures/Sword.webp" alt="" />
               </li>
-            </ul>
-            <ul>
               <li>
-                <video
-                  id="box"
-                  preload="none"
-                  poster="/assets/textures/box-poster.png"
-                  src="/assets/textures/box.mov"
-                  loading="lazy"
-                  loop
-                  autoplay
-                ></video>
+                <img id="box" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/11/Chest_%28S%29_BE1.png/revision/latest?cb=20191203082210" alt="" />
               </li>
+             
             </ul>
           </div>
         </div>
 
-        <div id="game">
+        <div id="game" class="Flex-Centre">
           <div class="InventoryBox"></div>
           <div class="map"></div>
         </div>
       </div>
 
       <div id="loading-screen">
-        <div class="dis-flex">
+        <div class="dis-flex Flex-Centre">
           <img src="/assets/textures/trapped_chest.png" alt="" />
           <p>LOADING...</p>
         </div>

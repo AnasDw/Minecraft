@@ -545,7 +545,7 @@ export function SwitchScreen(returnScreen, exitsScreen, loadingScreen) {
   audio.play();
   returnScreen.style.display = "none";
   exitsScreen.style.display = "none";
-  loadingScreen.style.display = "flex";
+  loadingScreen.style.display = "block";
   setTimeout(function () {
     loadingScreen.style.display = "none";
     returnScreen.style.display = "flex";

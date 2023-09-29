@@ -3,7 +3,7 @@ export const gameWindow = document.getElementById("game-window");
 export const loadingScreen = document.getElementById("loading-screen");
 export const music = document.getElementById("video-sound");
 export const InventoryBox = gameWindow.querySelector(".InventoryBox");
-const video = document.querySelector("video");
+export const video = document.querySelector("video");
 
 homePage.querySelectorAll("li").forEach((l) => {
   l.addEventListener("click", () => {
@@ -106,7 +106,10 @@ Maps_Menu.querySelector("#Tnt").addEventListener("click", () => {
     music.pause();
     Maps_Menu.style.display = "none";
     Menu.style.display = "flex";
+
+    video.style.display = "none";
     SwitchScreen(gameWindow, homePage, loadingScreen);
+
     let StartGame = null;
     StartGame = new Game(SelectedMap);
   } else alert("Please select a map");

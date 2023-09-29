@@ -1,0 +1,38 @@
+
+.InventoryBox{
+    display:none;
+    position: absolute;
+    opacity: 0.9;
+    border-radius: 17px;
+    background-color:rgb(104, 70, 27);
+    border: 4px rgb(201, 132, 15) solid;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vmin;
+    width: 76vmin;
+    bottom: 0rem;
+}
+.InventoryBox .block{
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+}
+.InventoryBox .block:hover{
+    border: 2px solid rgb(237, 2, 2);
+}
+.Active{
+    z-index: 1;
+    display:flex;
+}
+
+.Item-counter{
+    background-color: black;
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid black;
+    bottom: 4px;
+    left: 5px;
+    height: 2vmin;
+    width: 3vmin;
+    font-size: 13px;
+    color: aliceblue;
+}

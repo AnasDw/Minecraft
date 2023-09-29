@@ -87,7 +87,10 @@ export class Game {
     this._UI = null;
 
     SwitchScreen(homePage, gameWindow, loadingScreen);
-    music.play();
+    setTimeout(() => {
+      video.style.display = "flex";
+      music.play();
+    }, 3000);
   }
   _ResetGame() {
     this._UI._EndUI();
@@ -114,6 +117,7 @@ import {
   homePage,
   music,
   InventoryBox,
+  video,
 } from "../main.js";
 import { World } from "./World.js";
 import { Player } from "./Player.js";

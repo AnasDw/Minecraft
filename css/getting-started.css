@@ -1,77 +1,73 @@
-#Getting-Started{
-    display: none;
+#Getting-Started {
+  display: none;
 }
 
-.display-block{
-    position: absolute;
-    margin: 180px;
-    overflow: hidden;
+.display-block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 180px;
+  overflow: hidden;
 }
 
-.Instructions{
-    opacity: 0.6;
-    width: 650px;
-    height:auto;
-    background-color: rgb(211, 211, 211);
+.Instructions {
+  opacity: 0.6;
+  width: 50vw;
+  height: auto;
+  background-color: rgb(211, 211, 211);
+  text-align: center;
 }
-.Instructions header img{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    top: 5px;
-    right: 5px;
+.Instructions footer img {
+  width: 3vw;
+  height: 3vw;
+  cursor: pointer;
 }
-.Instructions ul{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.Instructions ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.Instructions ul li{
-    display: flex;
-    justify-content:first baseline;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
+.Instructions ul li {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
 }
-.Instructions img{
-    width: 110px;
-    height: 100px;
+.Instructions img {
+  width: 10vw;
+  height: 10vw;
 }
 
-
-#Maps-menu{
-    display: none;
+#Maps-menu {
+  display: none;
 }
-#Maps-menu .Instructions  header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    height: 40px;
+#Maps-menu .Instructions header {
+  font-size: large;
+  height: 40px;
 }
-#Maps-menu .Instructions img{
-    border-radius: 12px;
-    cursor: pointer;
+#Maps-menu .Instructions img {
+  border-radius: 12px;
+  cursor: pointer;
 }
 
-#Maps-menu .Instructions ul{
-    margin: 30px;
+#Maps-menu .Instructions ul {
+  margin: 1vw;
 }
-#Maps-menu footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 1rem;
+#Maps-menu footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
 }
-#Maps-menu footer img{
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+#Maps-menu footer img {
+  width: 3vw;
+  height: 3vw;
+  cursor: pointer;
 }
 
-.chosen-map div{
-    background-color: rgb(35, 183, 33);
-    border: 3px solid rgb(12, 12, 12);
-    min-height: 40px;
+.chosen-map div {
+  background-color: rgb(35, 183, 33);
+  border: 3px solid rgb(12, 12, 12);
+  min-height: 40px;
 }

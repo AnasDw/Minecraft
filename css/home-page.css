@@ -1,61 +1,56 @@
-#home-land-video{
-    display: flex;
-    justify-content: center;
-    position: relative;
+
+.Menu {
+  top: 15%;
+  display: none;
+  z-index: 1;
+  position: absolute;
 }
-#home-land-video video {
-    width: 100%;
-    height: 100%;
+.Menu img {
+  width: 105vmin;
+}
+.Menu ul {
+  gap: 3rem;
 }
 
-.Menu{
-    display: none;
-    flex-direction: column;
-    z-index: 1;
-    position: absolute;
-    top: 100px;
-    align-items: center;
-}
-.Menu img{
-    width: 890px;
-    height: 260px;
-}
-.Menu ul{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+.Menu ul li {
+  margin-top: 4%;
+  width: 100vmin;
+  height: auto;
+  font-weight: 400;
+  font-size: 2vw;
+  color: whitesmoke;
+  cursor: pointer;
 }
 
-.Menu ul li{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    width: 500px;
+#icon {
+  cursor: pointer;
+  background-color: whitesmoke;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 5px;
+  left: 2rem;
+  border-radius: 12px;
+  opacity: 0.4;
+}
+
+.Menu ul li:hover,
+#icon:hover {
+  color: rgb(155, 65, 65);
+  transition: 0.5s;
+  transform: translateX(-10px);
+}
+
+#icon:hover {
+  opacity: 0.8;
+  transform: translateY(-10px);
+}
+
+@media (max-width: 1189px) {
+  .Menu img {
     height: auto;
-    font-weight: 400;
-    font-size: 30px;
-    color: whitesmoke;
-    cursor: pointer;
-
-}
-.Menu ul li:hover , #icon:hover{
-    color: rgb(155, 65, 65);
-    transition: 0.5s;
-    transform:translateX(-10px);
-}
-
-#icon{
-    cursor: pointer;
-    background-color:whitesmoke;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    bottom: 5px;
-    left: 2rem;
-    border-radius: 12px;
-    opacity: 0.4;
-}
-#icon:hover{
-    opacity: 0.8;
-    transform:translateY(-10px);
+  }
+  .Menu ul li {
+    font-size: 3vw;
+  }
 }
